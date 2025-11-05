@@ -107,33 +107,8 @@ function Component() {
               transition={{ delay: 0.4 }}
               className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed"
             >
-              My journey in web development has been driven by curiosity and a
-              commitment to continuous learning. I love tackling complex challenges
-              and transforming them into elegant solutions that users love.
+              My journey in web development has been driven by curiosity and a commitment to continuous learning. I love tackling complex challenges and transforming them into elegant solutions that users love.
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="pt-4"
-            >
-              <ul className="space-y-3 text-zinc-600 dark:text-zinc-400">
-                <li className="flex items-start gap-3">
-                  <span className="text-zinc-800 dark:text-zinc-200 font-semibold mt-1">✓</span>
-                  <span>5+ years of development experience</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-zinc-800 dark:text-zinc-200 font-semibold mt-1">✓</span>
-                  <span>Expert in React, Next.js, and Node.js</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-zinc-800 dark:text-zinc-200 font-semibold mt-1">✓</span>
-                  <span>Passionate about user experience</span>
-                </li>
-              </ul>
-            </motion.div>
           </motion.div>
         </div>
       </div>
