@@ -2,7 +2,7 @@ import { Hero } from "@/components/ui/hero";
 import { ScrollPrompt } from "@/components/ui/scroll-prompt";
 import { Technologies } from "@/components/ui/technologies";
 import { About } from "@/components/ui/about";
-
+import { Timeline } from "@/components/ui/timeline";
 export default function Home() {
   return (
     <>
@@ -16,6 +16,7 @@ export default function Home() {
       <About />
 
       <Technologies />
+      <Timeline />
     </>
   );
 }
