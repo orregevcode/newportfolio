@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
- 
-  import { AuroraBackground } from "@/components/ui/aurora-background";
+import { ThemeProvider } from "next-themes";
+import { AuroraBackground } from "@/components/ui/aurora-background";
+
 const inter = Inter();
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} antialiased bg-slate-50 dark:bg-zinc-900`}
       >
-        <AuroraBackground>
-          {children}
-        </AuroraBackground>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <AuroraBackground>
+            {children}
+          </AuroraBackground>
+        </ThemeProvider>
       </body>
     </html>
   );

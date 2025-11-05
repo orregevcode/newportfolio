@@ -16,13 +16,7 @@ const timelineData: TimelineEntry[] = [
     title: "Full Stack Developer-JoyTech Smart Solutions",
     link:"https://joytechit.com",
     content: "Developed full-stack applications using Next.js, Node.js, and TypeScript. Implemented Redux Thunk for state management and created services to interact with backend endpoints. Created custom hooks to manage the application’s business logic. Worked on the backend using Supabase. ."  },
-  {
-    date: "2023-2025",
-    title: "NOC (Network Operations Center) Operator at UPS ",
-    content:
-      "Worked with Jira, Zabbix, and Automic to monitor and automate business and network processes. Installed network switches and performed network troubleshooting. Managed Active Directory in a Windows Server environment, supporting 500 users. Monitored and maintained network and business processes to ensure operations of the company.",
-  },
-
+  
 ];
 
 const Timeline = () => {
@@ -40,7 +34,7 @@ const Timeline = () => {
           {timelineData.map((entry, index) => (
             <div key={index} className="relative mb-10 pl-8">
               <div className="bg-foreground absolute left-0 top-3.5 flex size-4 items-center justify-center rounded-full" />
-              <h4 className="rounded-xl py-2 text-3xl font-bold tracking-tight xl:mb-4 xl:px-3">
+              <h4 className="rounded-xl py-2 text-3xl font-bold text-primary tracking-tight xl:mb-4 xl:px-3 ">
                 {entry.title}
               </h4>
 
